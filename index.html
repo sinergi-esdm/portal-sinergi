@@ -3,21 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mengarahkan ke SINERGI - Portal TTE...</title>
-    <!-- Skrip Redirect Otomatis ke Google Apps Script Baru -->
-    <meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbzOa1ujkpDqSxIuSmh7xmf8FHc32yK3tt8o-XNLU_z4MsPv7NpcWXVueXuhLa0tVrH_Jg/exec">
-    <script>
-        window.location.href = "https://script.google.com/macros/s/AKfycbzOa1ujkpDqSxIuSmh7xmf8FHc32yK3tt8o-XNLU_z4MsPv7NpcWXVueXuhLa0tVrH_Jg/exec";
-    </script>
+    <title>Sistem Pelayanan TTE Terintegrasi (SINERGI)</title>
     <style>
-        body { background-color: #f4f7f6; height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; }
-        .loader { color: #555; font-size: 1.1rem; }
+        body { 
+            background-color: #f4f7f6; 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            margin: 0;
+            padding: 20px;
+        }
+        .loader { color: #333; font-size: 1.2rem; }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border-left-color: #09f;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px auto;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
+    
+    <script>
+        // Ganti URL ini dengan URL Web App Apps Script Anda yang terbaru
+        var urlAppsScript = "https://script.google.com/macros/s/AKfycbzOa1ujkpDqSxIuSmh7xmf8FHc32yK3tt8o-XNLU_z4MsPv7NpcWXVueXuhLa0tVrH_Jg/exec";
+        
+        // Gunakan metode replace agar layar HP di-render ulang sepenuhnya
+        window.onload = function() {
+            window.location.replace(urlAppsScript);
+        };
+    </script>
 </head>
 <body>
     <div class="loader">
+        <div class="spinner"></div>
         <p>Sedang memuat <strong>SINERGI</strong>...</p>
-        <p class="small text-muted">Mohon tunggu sebentar, Anda sedang dialihkan ke portal layanan.</p>
+        <p style="font-size: 0.9rem; color: #777;">Sistem Pelayanan Tanda Tangan Elektronik<br>Dinas ESDM Provinsi Jawa Timur</p>
     </div>
 </body>
 </html>
